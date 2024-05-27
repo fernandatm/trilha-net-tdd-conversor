@@ -1,0 +1,12 @@
+C:\Users\ferna\OneDrive\Documentos\Estudos\CSharp-DIO\tdd-na-pratica\trilha-net-tdd-conversor\conversor-tdd\bin\Debug\net8.0\conversor-tdd.deps.json
+C:\Users\ferna\OneDrive\Documentos\Estudos\CSharp-DIO\tdd-na-pratica\trilha-net-tdd-conversor\conversor-tdd\bin\Debug\net8.0\conversor-tdd.dll
+C:\Users\ferna\OneDrive\Documentos\Estudos\CSharp-DIO\tdd-na-pratica\trilha-net-tdd-conversor\conversor-tdd\bin\Debug\net8.0\conversor-tdd.pdb
+C:\Users\ferna\OneDrive\Documentos\Estudos\CSharp-DIO\tdd-na-pratica\trilha-net-tdd-conversor\conversor-tdd\obj\Debug\net8.0\conversor-tdd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ferna\OneDrive\Documentos\Estudos\CSharp-DIO\tdd-na-pratica\trilha-net-tdd-conversor\conversor-tdd\obj\Debug\net8.0\conversor-tdd.AssemblyInfoInputs.cache
+C:\Users\ferna\OneDrive\Documentos\Estudos\CSharp-DIO\tdd-na-pratica\trilha-net-tdd-conversor\conversor-tdd\obj\Debug\net8.0\conversor-tdd.AssemblyInfo.cs
+C:\Users\ferna\OneDrive\Documentos\Estudos\CSharp-DIO\tdd-na-pratica\trilha-net-tdd-conversor\conversor-tdd\obj\Debug\net8.0\conversor-tdd.csproj.CoreCompileInputs.cache
+C:\Users\ferna\OneDrive\Documentos\Estudos\CSharp-DIO\tdd-na-pratica\trilha-net-tdd-conversor\conversor-tdd\obj\Debug\net8.0\conversor-tdd.sourcelink.json
+C:\Users\ferna\OneDrive\Documentos\Estudos\CSharp-DIO\tdd-na-pratica\trilha-net-tdd-conversor\conversor-tdd\obj\Debug\net8.0\conversor-tdd.dll
+C:\Users\ferna\OneDrive\Documentos\Estudos\CSharp-DIO\tdd-na-pratica\trilha-net-tdd-conversor\conversor-tdd\obj\Debug\net8.0\refint\conversor-tdd.dll
+C:\Users\ferna\OneDrive\Documentos\Estudos\CSharp-DIO\tdd-na-pratica\trilha-net-tdd-conversor\conversor-tdd\obj\Debug\net8.0\conversor-tdd.pdb
+C:\Users\ferna\OneDrive\Documentos\Estudos\CSharp-DIO\tdd-na-pratica\trilha-net-tdd-conversor\conversor-tdd\obj\Debug\net8.0\ref\conversor-tdd.dll

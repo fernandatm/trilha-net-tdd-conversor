@@ -29,7 +29,7 @@ namespace conversor_tdd
             return 0;
         }
 
-        public decimal ConverterFahrenheitParaCelsius(decimal t1, decimal t2)
+        public decimal ConverterFahrenheitParaCelsius(decimal temperatura)
         {
             return 0;
         }

@@ -11,5 +11,5 @@ Regras:
     - converter Fahrenheit e Kelvin
     - converter Fahrenheit e Celsius
 - 1 entrada para cada operação
-- tipo decimal para valores de temperatura
+- tipo double para valores de temperatura
 - retornar histórico das últimas 3 operações realizadas

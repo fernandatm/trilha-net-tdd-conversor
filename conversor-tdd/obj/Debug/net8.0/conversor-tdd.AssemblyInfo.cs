@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("conversor-tdd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccbde31800589365dec73f7a5ca5d132d0c24f4b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfc94b48e54e97ef5acdd1d1e9c3b4989ee316cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("conversor-tdd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("conversor-tdd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

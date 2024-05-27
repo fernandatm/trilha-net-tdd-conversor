@@ -7,36 +7,56 @@ namespace conversor_tdd
 {
     public class Conversor
     {
-        public decimal ConverterCelsiusParaFahrenheit(decimal temperatura)
+        private List<string> listaHistorico;
+
+        public Conversor()
         {
-            return 0;
-        }
-        public decimal ConverterCelsiusParaKelvin(decimal temperatura)
-        {
-            return 0;
-        }
-        
-        public decimal ConverterKelvinParaCelsius(decimal temperatura)
-        {
-            return 0;
-        }
-        public decimal ConverterKelvinParaFahrenheit(decimal temperatura)
-        {
-            return 0;
-        }
-        public decimal ConverterFahrenheitParaKelvin(decimal temperatura)
-        {
-            return 0;
+            listaHistorico = new List<string>();
         }
 
-        public decimal ConverterFahrenheitParaCelsius(decimal temperatura)
+        public double ConverterCelsiusParaFahrenheit(double temperatura)
         {
-            return 0;
+            var resultado = Math.Round((temperatura * 9 / 5) + 32, 2);
+            listaHistorico.Insert(0, temperatura + "°C = " + resultado + "°F");
+            return resultado;
+        }
+        public double ConverterCelsiusParaKelvin(double temperatura)
+        {
+            var resultado = Math.Round(temperatura + 273.15, 2);
+            listaHistorico.Insert(0, temperatura + "°C = " + resultado + "K");
+            return resultado;
+        }
+        
+        public double ConverterKelvinParaCelsius(double temperatura)
+        {
+            var resultado = Math.Round(temperatura - 273.15, 2);
+            listaHistorico.Insert(0, temperatura + "K = " + resultado + "°C");
+            return resultado;
+        }
+        public double ConverterKelvinParaFahrenheit(double temperatura)
+        {
+            var resultado = Math.Round(((temperatura - 273.15) * 9 / 5) + 32, 2);
+            listaHistorico.Insert(0, temperatura + "K = " + resultado + "°F");
+            return resultado;
+        }
+        public double ConverterFahrenheitParaKelvin(double temperatura)
+        {
+            var resultado = Math.Round((temperatura - 32) * 5 / 9 + 273.15, 2);
+            listaHistorico.Insert(0, temperatura + "°F = " + resultado + "K");
+            return resultado;
+        }
+
+        public double ConverterFahrenheitParaCelsius(double temperatura)
+        {
+            var resultado = Math.Round((temperatura - 32) * 5 / 9, 2);
+            listaHistorico.Insert(0, temperatura + "°F = " + resultado + "°C");
+            return resultado;
         }
 
         public List<string> historico()
         {
-            return new List<string>();
+            listaHistorico.RemoveRange(3, listaHistorico.Count - 3);
+            return listaHistorico;
         }
 
     }

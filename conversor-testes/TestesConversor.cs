@@ -4,11 +4,17 @@ namespace conversor_testes;
 
 public class TestesConversor
 {
+    public Conversor construirConversor()
+    {
+        Conversor construtorDoConversor = new Conversor();
+        return construtorDoConversor;
+    }
+
     [Fact]
     public void DeveConverter10GrausCelsiusPara50GrausFahrenheit()
     {
-        Conversor conversor = new Conversor();
-        decimal resultado = conversor.ConverterCelsiusParaFahrenheit(10);
+        Conversor conversor = construirConversor();
+        double resultado = Math.Round(conversor.ConverterCelsiusParaFahrenheit(10), 2);
 
         Assert.Equal(50, resultado);
     }
@@ -17,10 +23,10 @@ public class TestesConversor
     [InlineData(10, 283.15)]
     [InlineData(29, 302.15)]
     [InlineData(82, 355.15)]
-    public void DeveConverterGrausCelsiusParaKelvin(decimal temperatura, decimal resultadoTeste)
+    public void DeveConverterGrausCelsiusParaKelvin(double temperatura, double resultadoTeste)
     {
-        Conversor conversor = new Conversor();
-        decimal resultadoConversor = conversor.ConverterCelsiusParaKelvin(temperatura);
+        Conversor conversor = construirConversor();
+        double resultadoConversor = Math.Round(conversor.ConverterCelsiusParaKelvin(temperatura), 2);
 
         Assert.Equal(resultadoTeste, resultadoConversor);
     }
@@ -29,10 +35,10 @@ public class TestesConversor
     [InlineData(300, 26.85)]
     [InlineData(283, 9.85)]
     [InlineData(350, 76.85)]
-    public void DeveConverterKelvinParaCelsius(decimal temperatura, decimal resultadoTeste)
+    public void DeveConverterKelvinParaCelsius(double temperatura, double resultadoTeste)
     {
-        Conversor conversor = new Conversor();
-        decimal resultadoConversor = conversor.ConverterKelvinParaCelsius(temperatura);
+        Conversor conversor = construirConversor();
+        double resultadoConversor = Math.Round(conversor.ConverterKelvinParaCelsius(temperatura), 2);
 
         Assert.Equal(resultadoTeste, resultadoConversor);
     }
@@ -41,34 +47,34 @@ public class TestesConversor
     [InlineData(300, 80.33)]
     [InlineData(283, 49.73)]
     [InlineData(350, 170.33)]
-    public void DeveConverterKelvinParaFahrenheit(decimal temperatura, decimal resultadoTeste)
+    public void DeveConverterKelvinParaFahrenheit(double temperatura, double resultadoTeste)
     {
-        Conversor conversor = new Conversor();
-        decimal resultadoConversor = conversor.ConverterKelvinParaFahrenheit(temperatura);
+        Conversor conversor = construirConversor();
+        double resultadoConversor = Math.Round(conversor.ConverterKelvinParaFahrenheit(temperatura), 2);
 
         Assert.Equal(resultadoTeste, resultadoConversor);
     }
 
     [Theory]
-    [InlineData(300, 422.039)]
-    [InlineData(283, 412.594)]
-    [InlineData(350, 449.817)]
-    public void DeveConverterFahrenheitParaKelvin(decimal temperatura, decimal resultadoTeste)
+    [InlineData(300, 422.04)]
+    [InlineData(283, 412.59)]
+    [InlineData(350, 449.82)]
+    public void DeveConverterFahrenheitParaKelvin(double temperatura, double resultadoTeste)
     {
-        Conversor conversor = new Conversor();
-        decimal resultadoConversor = conversor.ConverterFahrenheitParaKelvin(temperatura);
+        Conversor conversor = construirConversor();
+        double resultadoConversor = Math.Round(conversor.ConverterFahrenheitParaKelvin(temperatura), 2);
 
         Assert.Equal(resultadoTeste, resultadoConversor);
     }
 
     [Theory]
-    [InlineData(300, 422.039)]
-    [InlineData(283, 412.594)]
-    [InlineData(350, 449.817)]
-    public void DeveConverterFahrenheitParaCelsius(decimal temperatura, decimal resultadoTeste)
+    [InlineData(300, 148.89)]
+    [InlineData(283, 139.44)]
+    [InlineData(350, 176.67)]
+    public void DeveConverterFahrenheitParaCelsius(double temperatura, double resultadoTeste)
     {
-        Conversor conversor = new Conversor();
-        decimal resultadoConversor = conversor.ConverterFahrenheitParaCelsius(temperatura);
+        Conversor conversor = construirConversor();
+        double resultadoConversor = Math.Round(conversor.ConverterFahrenheitParaCelsius(temperatura), 2);
 
         Assert.Equal(resultadoTeste, resultadoConversor);
     }
@@ -76,7 +82,7 @@ public class TestesConversor
     [Fact]
     public void DeveRetornarHistoricoDasTresUltimasOperacoesRealizadas()
     {
-        Conversor conversor = new Conversor();
+        Conversor conversor = construirConversor();
         
         conversor.ConverterKelvinParaFahrenheit(10);
         conversor.ConverterFahrenheitParaCelsius(10);
